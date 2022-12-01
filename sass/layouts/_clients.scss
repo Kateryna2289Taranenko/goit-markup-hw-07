@@ -1,0 +1,34 @@
+.client-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+   
+  }
+  .client-item {
+    width: 170px;
+    height: 92px;
+    
+  }
+  .client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  }
+  .client-link:hover,
+  .client-link:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+  .client-logo {
+    fill: currentColor;
+  }
+  

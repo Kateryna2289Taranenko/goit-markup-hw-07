@@ -1,0 +1,30 @@
+.section.works {
+    padding-top: 0;
+  }
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+  .work-images {
+    flex-basis: calc(100% / 3 - 30px);
+    position: relative;
+  }
+  .work-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(47, 48, 58, 0.8);;
+  }
+  .work-text {
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    
+  }

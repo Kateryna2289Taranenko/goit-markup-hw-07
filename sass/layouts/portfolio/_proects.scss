@@ -1,0 +1,62 @@
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .card-link {
+    flex-basis: calc(100% / 9 - 30px);
+    background: #FFFFFF;
+  }
+  .overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay-text {
+    position: absolute;
+    top: 0;
+    background-color:  rgba(33, 150, 243, 0.9);
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5555;
+    padding: 63px 24px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
+  }
+  .projects-list:hover .overlay-text {
+    transform: translateY(0);
+  }
+  .projects-list:focus .overlay-text {
+    transform: translateY(0);
+  }
+  .card {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+  }
+  .projects-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  .projects-view {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+  .projects-list {
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .projects-list:hover {
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
