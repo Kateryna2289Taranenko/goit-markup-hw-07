@@ -16,10 +16,11 @@
     line-height: 1.1923;
     display: block;
     margin-bottom: 20px;
+    &:focus {
+      color: var(--accent-color);
+    }
   }
-  .logo-footer:focus {
-    color: var(--accent-color);
-  }
+  
   .link-address:not(:last-child){
     margin-bottom: 9px;
   }
@@ -33,11 +34,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
-  .footer-map:hover,
-  .footer-map:focus {
-    color: var(--accent-color);
-  }
+ 
   .footer-link {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
@@ -48,8 +50,9 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .footer-link:focus,
-  .footer-link:hover {
+    &:focus,
+    &:hover {
     color: var(--accent-color);
   }
+  }
+  

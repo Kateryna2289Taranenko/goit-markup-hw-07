@@ -21,13 +21,13 @@
     transition-property: border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+      fill: var(--accent-color);
+    }
+  }
   
-  }
-  .client-link:hover,
-  .client-link:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-  }
   .client-logo {
     fill: currentColor;
   }

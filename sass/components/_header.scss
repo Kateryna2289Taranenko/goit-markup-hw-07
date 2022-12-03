@@ -35,21 +35,22 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .link:hover,
-  .link:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
   }
-  .list .link.current {
-    color: var(--accent-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
+  
+  
   .list {
     display: flex;
     gap: 50px;
     margin-right: 318px;
-    
+    & .link.current {
+      color: var(--accent-color);
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
   .header-link {
     color: var(--primary-text-color);
@@ -64,11 +65,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header-link:hover,
-  .header-link:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
   }
+  }
+  
   .communication {
     display: flex;
     gap: 30px;

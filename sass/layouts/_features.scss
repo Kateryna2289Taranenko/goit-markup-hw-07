@@ -1,25 +1,26 @@
-.features-lists {
+.features-section__list {
     display: flex;
   }
-  .features-list:last-child{
-    margin-right: 0;
-  }
-  .features-list {
+  
+  .features-section__item {
     margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
   }
-  .features-title {
+  .features-section__title {
     margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1428;
   }
-  .features-text {
+  .features-section__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7142;
   }
-  .features-box{
+  .features-section__box{
     display: flex;
     align-items: center;
     justify-content: center;

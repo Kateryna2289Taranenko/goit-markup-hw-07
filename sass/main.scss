@@ -1,4 +1,4 @@
-@import './utils/vars';
+@import './utils/variables';
 @import './utils/hide';
 @import './bace/reset';
 @import './bace/common';
@@ -6,15 +6,15 @@
 @import './components/title';
 @import './components/section';
 @import './components/modal';
-@import './layouts/header';
+@import './components/header';
+@import './components/footer';
+@import './components/join.scss';
+@import './components/form-footer';
 @import './layouts/hero';
 @import './layouts/features';
 @import './layouts/work';
 @import './layouts/team';
 @import './layouts/clients';
-@import './layouts/footer';
-@import './layouts/join.scss';
-@import './layouts/form-footer';
-@import './portfolio/filter';
-@import './portfolio/proects';
+@import './layouts/portfolio/filter';
+@import './layouts/portfolio/proects';
 
